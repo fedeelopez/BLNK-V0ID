@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#0d0d0d, #0f0f0f /* #101010*/);
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: 250px;
+  transition: 0.5s;
+  &:hover {
+    background-color: #0d0d0d;
+    transition: 0.5s;
+    box-shadow: 8px 8px 8px 1px #e3e3e3;
+    -webkit-box-shadow: -1px 2px 20px 1px #e3e3e3;
+    -moz-box-shadow: 8px 8px 8px 1px #e3e3e3;
+  }
+}
+.h1-logo {
+  display: flex;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.div-navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+
+  .ul-header {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      color: white;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 350px;
+
+  .img-intro {
+    border-radius: 15px 50px;
+    object-fit: contain;
+  }
+}
+
+.div-comingsoon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 1000px;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6B6B6B;
+  height: 200px;
+
+  .div-foot {
+    margin: 10px;
+    
+
+    .ul-foot {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      li {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-family: "Pathway Gothic One", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+      }
+    }
+  }
+
+  .div-foot-i {
+    display: flex;
+    margin: 20px;
+    gap: 40px;
+    color: black;
+  }
+}
+
+footer .div-foot{
+    border-bottom: 1px solid #0d0d0d;
+}
+
+footer .div-foot:last-child{
+    border-bottom: none;
+}
