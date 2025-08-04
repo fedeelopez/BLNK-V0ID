@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLNK-V0ID | Contacto</title>
+    <title>BLNK-V0ID | Help</title>
     <link
       rel="shortcut icon"
       href="/assets/imgs/logo-img.jpg"
@@ -45,51 +45,69 @@
                 <button class="btn-buscar"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
             </div>
             <li>Cart</li>
-            <li>Help</li>
+            <a href="/pages/help.html">Help</a>
           </ul>
         </nav>
       </div>
     </header>
     <!--MAIN-->
     <main>
-      
-      <section id="form-section"> 
-      <div class="form-page">
-        <h2>What can we help you with?</h2>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-            required
-          />
+      <section id="contact-form-section">
+        <div class="form-container">
+          <div class="form-content">
+            <div class="form-header">
+              <h2 class="form-title">LET'S CONNECT</h2>
+              <p class="form-subtitle">We want to hear from you. Share your thoughts, questions, or just say hello.</p>
+            </div>
+            
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="text" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control contact-input"
+                  id="text"
+                  placeholder="Your name..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control contact-input"
+                  id="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control contact-textarea"
+                  id="message"
+                  rows="5"
+                  placeholder="Tell us what's on your mind..."
+                  required
+                ></textarea>
+              </div>
+              
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">SEND MESSAGE</span>
+                <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Message</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            required
-          ></textarea>
-        </div>
-        <button class="btn-form" type="submit">Send</button>
-      </div>
       </section>
 
     </main>
     <footer>
       <div class="div-foot">
         <ul class="ul-foot">
-          <li>About us</li>
-          <li>Help</li>
-          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/aboutus.html">About us</a></li>
+          <li><a href="/pages/help.html">Help</a></li>
           <li>®All rights reserved </li>
           <li>©2025 BLNK-V0ID</li>
         </ul>
@@ -112,7 +130,7 @@
     ></script>
     <script src="/js/icons.js"></script>
     <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/+5491124582012?text=¡Hola! Me gustaría obtener más información sobre BLNK-V0ID 🚀" 
+    <a href="https://wa.me/+5492233418109?text=Hi! I would like more information about BLNK-V0ID. 🚀" 
        class="whatsapp-float" 
        target="_blank" 
        rel="noopener noreferrer"

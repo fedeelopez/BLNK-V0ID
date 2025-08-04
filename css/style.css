@@ -23,6 +23,11 @@ header {
     -webkit-box-shadow: -1px 2px 20px 1px #e3e3e3;
     -moz-box-shadow: 8px 8px 8px 1px #e3e3e3;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+  }
 }
 
 .h1-logo {
@@ -30,10 +35,10 @@ header {
 }
 
 #img-logo {
-    width: 100%;
-    height: 250px;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
 }
 
 /* NAVBAR */
@@ -45,7 +50,7 @@ header {
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
-   transition:1s;
+  transition: 1s;
 
   .ul-header {
     display: flex;
@@ -60,25 +65,25 @@ header {
   }
 }
 
-.buscador{
+.buscador {
   display: flex;
   flex-direction: row;
 
-  .buscador-input{
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid #e3e3e3;
-      outline: none;
-      font-size: 16px;
-      padding: 5px 0;
-      background: transparent;
-      color:white;
+  .buscador-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 0;
+    background: transparent;
+    color: white;
   }
-  .buscador-input::placeholder{
+  .buscador-input::placeholder {
     color: #e3e3e3;
     letter-spacing: 1px;
   }
-  .btn-buscar{
+  .btn-buscar {
     width: 40px;
     height: 40px;
     background: transparent;
@@ -101,11 +106,11 @@ main {
 
   img {
     object-fit: contain;
-    transition:1s;
-    &:hover{
+    transition: 1s;
+    &:hover {
       transform: scale(1.05);
-      transition:1s;
-      filter: drop-shadow(0.5px 0.5px 8px #C0C0C0);
+      transition: 1s;
+      filter: drop-shadow(0.5px 0.5px 8px #c0c0c0);
     }
   }
 }
@@ -125,22 +130,21 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color:white;
+    color: white;
     width: 700px;
-    height: 420px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 8px 8px 13px -1px #e3e3e3;
     -webkit-box-shadow: 0px 0px 10px 3px #e3e3e3;
     -moz-box-shadow: 8px 8px 13px -1px #e3e3e3;
 
-    h2{
+    h2 {
       font-family: "Pathway Gothic One", sans-serif;
       font-size: 30px;
     }
 
-    .mb-3 label{
-      color:white;
+    .mb-3 label {
+      color: white;
       font-family: "Pathway Gothic One", sans-serif;
       font-size: 20px;
     }
@@ -182,11 +186,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #6B6B6B;
+  background-color: #6b6b6b;
   height: 200px;
-  a{
+  a {
     text-decoration: none;
-    color:black;
+    color: black;
     list-style: none;
   }
 
@@ -218,137 +222,635 @@ footer {
   }
 }
 
-footer .div-foot{
-    border-bottom: 1px solid #0d0d0d;
+footer .div-foot {
+  border-bottom: 1px solid #0d0d0d;
 }
 
-footer .div-foot:last-child{
-    border-bottom: none;
+footer .div-foot:last-child {
+  border-bottom: none;
 }
 
 /* Botón flotante de WhatsApp */
 .whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 65px;
-    height: 65px;
-    background: linear-gradient(135deg, #25d366, #128c7e);
-    border-radius: 50%;
-    text-align: center;
-    font-size: 32px;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    text-decoration: none;
-    color: white;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .whatsapp-float i {
-    padding-left: 35px;
+  padding-left: 35px;
 }
 
 .whatsapp-float:hover {
-    background: linear-gradient(135deg, #128c7e, #075e54);
-    transform: scale(1.15) rotate(5deg);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
-    border-color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, #128c7e, #075e54);
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .whatsapp-float:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* Animación de pulso mejorada */
 @keyframes whatsapp-pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-    }
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }
 
 .whatsapp-float {
-    animation: whatsapp-pulse 3s infinite;
+  animation: whatsapp-pulse 3s infinite;
 }
 
 /* Tooltip flotante */
 .whatsapp-float::before {
-    content: "¡Chat with us!";
-    position: absolute;
-    right: 80px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    font-family: "Pathway Gothic One", sans-serif;
+  content: "¡Chat with us!";
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  font-family: "Pathway Gothic One", sans-serif;
 }
 
 .whatsapp-float::after {
-    content: "";
-    position: absolute;
-    right: 70px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 5px solid transparent;
-    border-left-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
 }
 
 .whatsapp-float:hover::before,
 .whatsapp-float:hover::after {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
-    .whatsapp-float {
-        width: 55px;
-        height: 55px;
-        font-size: 28px;
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    .whatsapp-float::before {
-        display: none;
-    }
-    
-    .whatsapp-float::after {
-        display: none;
-    }
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float::before {
+    display: none;
+  }
+
+  .whatsapp-float::after {
+    display: none;
+  }
 }
 
 /* Animación de entrada */
 @keyframes slideIn {
-    from {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .whatsapp-float {
-    animation: slideIn 0.5s ease-out, whatsapp-pulse 3s infinite 0.5s;
+  animation: slideIn 0.5s ease-out, whatsapp-pulse 3s infinite 0.5s;
+}
+
+/*ABOUT US*/
+
+/* Hero Section */
+#about-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 20% 80%,
+        rgba(227, 227, 227, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(227, 227, 227, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 40% 40%,
+        rgba(227, 227, 227, 0.05) 0%,
+        transparent 50%
+      );
+    animation: voidPulse 8s ease-in-out infinite;
+  }
+
+  .hero-content {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+
+  .hero-text {
+    .hero-title {
+      font-family: "Cinzel Decorative", serif;
+      font-size: 8rem;
+      font-weight: 900;
+      color: #e3e3e3;
+      text-shadow: 0 0 10px rgba(227, 227, 227, 0.5),
+        0 0 20px rgba(227, 227, 227, 0.3), 0 0 30px rgba(227, 227, 227, 0.1);
+      letter-spacing: 1rem;
+      margin-bottom: 1rem;
+      animation: titleGlow 3s ease-in-out infinite alternate;
+    }
+
+    .hero-subtitle {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.5rem;
+      color: #c0c0c0;
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      animation: subtitleFloat 4s ease-in-out infinite;
+    }
+  }
+}
+
+/* Story Grid Section */
+#about-story {
+  padding: 100px 0;
+
+  .story-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    height: 600px;
+  }
+
+  .story-card {
+    position: relative;
+    border: 2px solid rgba(227, 227, 227, 0.2);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(227, 227, 227, 0.1),
+        transparent
+      );
+      transition: left 0.6s ease;
+    }
+
+    &:hover {
+      transform: translateY(-10px) scale(1.02);
+      border-color: rgba(227, 227, 227, 0.5);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(227, 227, 227, 0.1);
+
+      &::before {
+        left: 100%;
+      }
+    }
+
+    .card-content {
+      padding: 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-family: "Cinzel Decorative", serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #e3e3e3;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      letter-spacing: 0.2rem;
+    }
+
+    .card-text {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #c0c0c0;
+      text-align: justify;
+    }
+  }
+
+  /* Individual card animations */
+  .story-card-1 {
+    animation: cardSlideIn 1s ease-out 0.2s both;
+  }
+  .story-card-2 {
+    animation: cardSlideIn 1s ease-out 0.4s both;
+  }
+  .story-card-3 {
+    animation: cardSlideIn 1s ease-out 0.6s both;
+  }
+  .story-card-4 {
+    animation: cardSlideIn 1s ease-out 0.8s both;
+  }
+}
+
+/* Manifesto Section */
+#about-manifesto {
+  padding: 120px 0;
+  background: linear-gradient(45deg, #0d0d0d 0%, #0f0f0f 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(227, 227, 227, 0.02) 50%,
+      transparent 70%
+    );
+    animation: manifestoShimmer 6s ease-in-out infinite;
+  }
+
+  .manifesto-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .manifesto-content {
+    text-align: center;
+  }
+
+  .manifesto-text {
+    margin-bottom: 60px;
+
+    .manifesto-title {
+      font-family: "Cinzel Decorative", serif;
+      font-size: 4rem;
+      font-weight: 900;
+      color: #e3e3e3;
+      text-shadow: 0 0 20px rgba(227, 227, 227, 0.3),
+        0 0 40px rgba(227, 227, 227, 0.1);
+      letter-spacing: 0.5rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .manifesto-paragraph {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.3rem;
+      color: #c0c0c0;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .manifesto-signature {
+    border-top: 2px solid rgba(227, 227, 227, 0.2);
+    padding-top: 40px;
+
+    .signature-brand {
+      font-family: "Cinzel Decorative", serif;
+      font-size: 3rem;
+      font-weight: 900;
+      color: #e3e3e3;
+      letter-spacing: 0.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .signature-tagline {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.1rem;
+      color: #c0c0c0;
+      font-style: italic;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+/* Animations */
+@keyframes voidPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes titleGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(227, 227, 227, 0.5),
+      0 0 20px rgba(227, 227, 227, 0.3), 0 0 30px rgba(227, 227, 227, 0.1);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(227, 227, 227, 0.7),
+      0 0 40px rgba(227, 227, 227, 0.4), 0 0 60px rgba(227, 227, 227, 0.2);
+  }
+}
+
+@keyframes subtitleFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes manifestoShimmer {
+  0%,
+  100% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes manifestoGlow {
+  0% {
+    text-shadow: 0 0 20px rgba(227, 227, 227, 0.3),
+      0 0 40px rgba(227, 227, 227, 0.1);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(227, 227, 227, 0.5),
+      0 0 60px rgba(227, 227,  227,  0.2);
+  }
+}
+
+/* Contact Form Section */
+#contact-form-section {
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(227, 227, 227, 0.02) 50%,
+      transparent 70%
+    );
+    animation: manifestoShimmer 6s ease-in-out infinite;
+  }
+
+  .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .form-content {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(227, 227, 227, 0.2);
+    border-radius: 15px;
+    padding: 60px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+      0 0 20px rgba(227, 227, 227, 0.1);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      border-color: rgba(227, 227, 227, 0.4);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(227, 227, 227, 0.2);
+    }
+  }
+
+  .form-header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .form-title {
+      font-family: "Cinzel Decorative", serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #e3e3e3;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      letter-spacing: 0.3rem;
+    }
+
+    .form-subtitle {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.2rem;
+      color: #c0c0c0;
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .contact-form {
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    .form-label {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.1rem;
+      color: #e3e3e3;
+      margin-bottom: 10px;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+
+    .contact-input,
+    .contact-textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid rgba(227, 227, 227, 0.2);
+      border-radius: 8px;
+      padding: 15px 20px;
+      color: #e3e3e3;
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+
+      &::placeholder {
+        color: rgba(227, 227, 227, 0.5);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: rgba(227, 227, 227, 0.6);
+        box-shadow: 0 0 20px rgba(227, 227, 227, 0.2);
+        background: rgba(255, 255, 255, 0.08);
+      }
+    }
+
+    .contact-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #e3e3e3 0%, #c0c0c0 100%);
+      border: none;
+      border-radius: 8px;
+      padding: 18px 30px;
+      color: #0d0d0d;
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(227, 227, 227, 0.3),
+          0 0 15px rgba(227, 227, 227, 0.2);
+
+        &::before {
+          left: 100%;
+        }
+      }
+
+      &:active {
+        transform: translateY(-1px);
+      }
+
+      .btn-text {
+        z-index: 1;
+        position: relative;
+      }
+
+      .btn-icon {
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+
+        i {
+          transition: transform 0.3s ease;
+        }
+      }
+
+      &:hover .btn-icon i {
+        transform: translateX(5px);
+      }
+    }
+  }
 }
